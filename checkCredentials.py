@@ -2,7 +2,7 @@
 
 import twitter
 
-with open('credentials','r') as credentialsFile:
+with open('/home/kerem/.credentials','r') as credentialsFile:
    lines = credentialsFile.readlines()
 
 api = twitter.Api( 
@@ -13,4 +13,20 @@ api = twitter.Api(
 )
 
 cred_dict = api.VerifyCredentials()
-print cred_dict
+if cred_dict:
+  print 'Credentials OK..\n'
+#print cred_dict
+
+#users = api.GetFriends()
+#for user in users:
+#  print user
+
+status = api.GetStreamSample()
+
+for line in status:
+  try:
+    print line
+    print '--'*10
+  except KeyError, httplib.IncompleteRead:
+    continue
+
