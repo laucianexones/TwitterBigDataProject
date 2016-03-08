@@ -1,5 +1,9 @@
-if = open('search_tr','w')
-tweets = api.GetSearch('python',lang='en', count=100)
+#! /usr/bin/python
+
+import getCredentials 
+
+f = open('search_tr','w')
+tweets = getCredentials.api.GetSearch('python',lang='en', count=100)
 for t in tweets:
     tweet = t.text
     hashtag = []
