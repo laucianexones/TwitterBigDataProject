@@ -2,7 +2,11 @@
 
 import getCredentials 
 
-f = open('search_tr','w')
+
+# search the keyword python in english language for 100 times
+# write the tweet text to a file, if the tweet contains hashtags, write them
+# to the file as well
+f = open('search_tr','a')
 tweets = getCredentials.api.GetSearch('python',lang='en', count=100)
 for t in tweets:
     tweet = t.text
