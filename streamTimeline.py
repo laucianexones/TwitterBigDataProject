@@ -25,7 +25,7 @@ for line in status:
         maxChars = chars
       print '--'*10
       count += 1
-      if count >= 1000:
+      if count >= 50:
         print 'maximumChars :  %i' % maxChars
         exit(1)
   except UnicodeEncodeError:

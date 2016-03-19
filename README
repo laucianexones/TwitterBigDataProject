@@ -1,3 +1,5 @@
+# tweet entry structure -------------------------------------------------------#
+# -----------------------------------------------------------------------------#
 contributors : None
 truncated : False
 text : @melvin622 j'vais te frapper
@@ -23,4 +25,4 @@ created_at : Thu Mar 10 20:23:11 +0000 2016
 filter_level : low
 in_reply_to_status_id_str : None
 place : None
-
+# -----------------------------------------------------------------------------#
