@@ -15,7 +15,7 @@ if not os.path.isfile(credentials_file):
 with open(credentials_file, 'r') as credentialsFile:
    lines = credentialsFile.readlines()
 
-api = twitter.Api( 
+api = twitter.Api(
   access_token_key = str(lines[0]).rstrip(), \
   access_token_secret = str(lines[1]).rstrip(), \
   consumer_key = str(lines[2]).rstrip(), \

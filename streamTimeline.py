@@ -1,7 +1,5 @@
 #! /usr/bin/python
-
-import getCredentials 
-
+import getCredentials
 status = getCredentials.api.GetStreamSample()
 
 
@@ -35,4 +33,3 @@ for line in status:
     continue
   #except KeyError, httplib.IncompleteRead:
   #  continue
-
